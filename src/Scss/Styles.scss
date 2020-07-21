@@ -1,4 +1,5 @@
 @import 'Global/Global.scss';
 @import 'Layout/Layout.scss';
-@import 'Config/_Vars.scss';
-@import 'Components/Header.scss';
+@import 'Config/Vars';
+@import 'Config/Mixins';
+@import 'Config/Media';

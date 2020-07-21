@@ -1,6 +1,8 @@
 import React from 'react';
-import logo from '../../src/Img/logo.png'
-import '../../src/Scss/Components/Header.scss';
+import logo from '../../Img/logo.png'
+import './Header.scss';
+import '../Button/Button'
+import Button from '../Button/Button';
 
 const Header = () => {
     return (
@@ -8,6 +10,7 @@ const Header = () => {
             <div className='headerLogo'>
                 <img src={logo} alt='logo' />
             </div>
+            <Button />
             <nav className='headerNav'>
                 <ul className='headerNav-list'>
                     <li className='headerNav-item'>
