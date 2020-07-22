@@ -1,1 +1,14 @@
 // Header
+
+@media screen and (max-width: 768px) {
+    .header {
+        .headerNav {
+            display: none;
+        }
+
+        .button {
+            display: block;
+        }
+
+    }
+}

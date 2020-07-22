@@ -3,6 +3,7 @@ import logo from '../../Img/logo.png'
 import './Header.scss';
 import '../Button/Button'
 import Button from '../Button/Button';
+import Menu from '../Menu/Menu';
 
 const Header = () => {
     return (
@@ -10,7 +11,6 @@ const Header = () => {
             <div className='headerLogo'>
                 <img src={logo} alt='logo' />
             </div>
-            <Button />
             <nav className='headerNav'>
                 <ul className='headerNav-list'>
                     <li className='headerNav-item'>
@@ -45,6 +45,8 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <Button />
+            <Menu />
         </header>
     );
 };

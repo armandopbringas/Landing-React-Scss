@@ -1,6 +1,7 @@
 @import '../../Scss/Styles.scss';
 
 .button {
+    display: none;
     cursor: pointer;
 
     .buttonlines {
@@ -10,5 +11,6 @@
         background: $text-color;
         border-radius: 1.5px;
     }
+
 }
 

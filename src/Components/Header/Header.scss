@@ -3,18 +3,14 @@
 .header {
     height: $header-height;
     margin: 0 auto;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $detail-color;
     justify-content: space-between;
     
     .headerNav {
-        position: fixed;
-        height: calc(100vh - #{$header-height});
-        width: 80vw;
-        top: $header-height;
-        right: -80vw;
-        background-color: black;
+        display: block;
 
         .headerNav-list {
+            display: flex;
 
             .headerNav-item {
                 margin: 0 3rem;
@@ -23,6 +19,10 @@
                     text-decoration: none;
                 }
             }
+
+            .headerNav-item:nth-child(3) {
+                margin-right: 0;
+              }
         }
     }
 }
