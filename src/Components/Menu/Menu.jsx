@@ -1,9 +1,13 @@
 import React from 'react';
 import './Menu.scss';
 
-const Menu = () => {
-    return (
-        <nav className='menuNav'>
+const Menu = ({ open }) => {
+
+    const content = open && (
+        <nav 
+            className='menuNav'
+            open={open}
+        >
             <ul className='menuNav-list'>
                 <li className='menuNav-item'>
                     <a 
@@ -37,7 +41,9 @@ const Menu = () => {
                 </li>
             </ul>
         </nav>
-    );
+    )
+
+    return content
 };
 
 export default Menu;

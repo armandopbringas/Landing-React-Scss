@@ -3,7 +3,6 @@ import logo from '../../Img/logo.png'
 import './Header.scss';
 import '../Button/Button'
 import Button from '../Button/Button';
-import Menu from '../Menu/Menu';
 
 const Header = () => {
     return (
@@ -46,7 +45,6 @@ const Header = () => {
                 </ul>
             </nav>
             <Button />
-            <Menu />
         </header>
     );
 };
