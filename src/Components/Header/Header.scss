@@ -3,7 +3,7 @@
 .header {
     height: $header-height;
     margin: 0 auto;
-    border-bottom: 1px solid $detail-color;
+    // border-bottom: 1px solid $detail-color;
     justify-content: space-between;
     
     .headerNav {
@@ -23,6 +23,18 @@
             .headerNav-item:nth-child(3) {
                 margin-right: 0;
               }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        .headerNav {
+            display: none;
+        }
+
+        .button {
+            display: block;
         }
     }
 }

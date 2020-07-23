@@ -1,6 +1,7 @@
 @import '../../Scss/Styles.scss';
 
 .menuNav {
+    z-index: 1000;
     position: fixed;
     height: calc(100vh - #{$header-height});
     width: 75vw;
