@@ -3,10 +3,11 @@ import './Menu.scss';
 
 const Menu = ({ open }) => {
 
-    const content = open && (
+    return (
         <nav 
+            id='menuNav'
             open={open}
-            className='menuNav'
+            className={ open ? '' : 'show' }
         >
             <ul className='menuNav-list'>
                 <li className='menuNav-item'>
@@ -39,11 +40,10 @@ const Menu = ({ open }) => {
                         Three
                     </a>
                 </li>
-            </ul>
+            </ul>  
         </nav>
-    )
+    );
 
-    return content
 };
 
 export default Menu;

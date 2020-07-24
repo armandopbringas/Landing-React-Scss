@@ -1,6 +1,6 @@
 @import '../../Scss/Styles.scss';
 
-.menuNav {
+#menuNav {
     z-index: 1000;
     position: fixed;
     height: calc(100vh - #{$header-height});
@@ -10,6 +10,7 @@
     border-radius: 3px;
     border: 1px solid $text-color 80%;
     background-color: $detail-color;
+    transition: transform 0.3s;
 
     .menuNav-list {
         width: 100%;
@@ -30,4 +31,8 @@
 
     }
 
+}
+
+.show {
+    transform: translate3d(75vw, 0, 0);
 }
