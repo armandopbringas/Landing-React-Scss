@@ -11,8 +11,9 @@ const Button = () => {
     }
 
     return (
-        <>
-            <div 
+        <div className='buttonContainer'>
+            <button
+                type='button'
                 open={open}
                 className='button'
                 onClick={showMenu}
@@ -20,12 +21,12 @@ const Button = () => {
                 <div className='buttonlines'/>
                 <div className='buttonlines'/>
                 <div className='buttonlines'/>
-            </div>
+            </button>
             <Menu 
                 open={open}
                 setOpen={setOpen} 
             />
-        </>
+        </div>
     );
 };
 

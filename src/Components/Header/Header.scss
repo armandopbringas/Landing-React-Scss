@@ -3,7 +3,6 @@
 .header {
     height: $header-height;
     margin: 0 auto;
-    // border-bottom: 1px solid $detail-color;
     justify-content: space-between;
     
     .headerNav {
@@ -31,10 +30,6 @@
     .header {
         .headerNav {
             display: none;
-        }
-
-        .button {
-            display: block;
         }
     }
 }

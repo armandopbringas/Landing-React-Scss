@@ -5,8 +5,8 @@ const Menu = ({ open }) => {
 
     const content = open && (
         <nav 
-            className='menuNav'
             open={open}
+            className='menuNav'
         >
             <ul className='menuNav-list'>
                 <li className='menuNav-item'>

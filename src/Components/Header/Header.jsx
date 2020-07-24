@@ -44,7 +44,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <Button />
+            <Button id='nav' />
         </header>
     );
 };
