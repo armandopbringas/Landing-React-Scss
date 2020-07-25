@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../Img/logo.png'
 import Button from '../Button/Button';
+import Modal from '../Form/Form';
 import './Header.scss';
 
 const Header = () => {
+
+    const [open, setOpen] =useState(false);
+
+    const showModal = () => {
+        setOpen(!open)
+    }
 
     return (
         <header className='header container'>
@@ -43,10 +50,22 @@ const Header = () => {
                         </a>
                     </li>
                 </ul>
+                <button
+                    type='button'
+                    onClick={showModal}
+                    className='headerNav-button'
+                >
+                    Early acces
+                </button>
             </nav>
+            <div 
+                className={`modalContainer modalShowing-${open}`}
+            >
+                <Modal />
+            </div>
             <Button />
         </header>
     );
 };
 
-export default Header
+export default Header;
