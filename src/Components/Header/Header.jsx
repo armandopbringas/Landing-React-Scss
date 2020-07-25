@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from '../../Img/logo.png'
-import './Header.scss';
-import '../Button/Button'
 import Button from '../Button/Button';
+import './Header.scss';
 
 const Header = () => {
+
     return (
         <header className='header container'>
             <div className='headerLogo'>
@@ -44,7 +44,7 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
-            <Button id='nav' />
+            <Button />
         </header>
     );
 };

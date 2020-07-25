@@ -1,15 +1,17 @@
 @import '../../Scss/Styles.scss';
 
 .header {
-    height: $header-height;
     margin: 0 auto;
+    height: $header-height;
     justify-content: space-between;
     
     .headerNav {
-        display: block;
+        display: flex;
+        align-items: center;
 
         .headerNav-list {
             display: flex;
+            margin-right: 3rem;
 
             .headerNav-item {
                 margin: 0 3rem;
