@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from '../../Img/logo.png'
 import Button from '../Button/Button';
 import Modal from '../Form/Form';
@@ -11,6 +11,18 @@ const Header = () => {
     const showModal = () => {
         setOpen(!open)
     }
+
+    // same but for keypresses
+    // if the esc key is pressed close the menu toggle
+    useEffect(() => {
+        const keyHandler = ({ keyCode }) => {
+        if (keyCode !== 27) return;
+        setOpen(false);
+        };
+        document.addEventListener('keydown', keyHandler);
+
+        return () => document.removeEventListener('keydown', keyHandler);
+    });
 
     return (
         <header className='header container'>
@@ -61,7 +73,7 @@ const Header = () => {
             <div 
                 className={`modalContainer modalShowing-${open}`}
             >
-                <Modal />
+                <Modal showModal={showModal}/>
             </div>
             <Button />
         </header>

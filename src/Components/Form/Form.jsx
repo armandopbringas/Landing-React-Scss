@@ -1,18 +1,21 @@
 import React from 'react';
 import './Form.scss';
 
-const Form = () => {
+const Form = ({ showModal }) => {
 
   return (
       <div
         className='formContainer'
       >
-        <button
-          type='button'
-          className='formButton-close'
-        >
-          x
-        </button>
+        <div className='modalButton-container'>
+          <button
+            type='button'
+            className='modalButton-close'
+            onClick={showModal}
+          >
+            x
+          </button>
+        </div>
         <form 
           action=""
           className='formContent'
@@ -30,7 +33,6 @@ const Form = () => {
         </form>
       </div>
   );
-  
 };
 
 export default Form;

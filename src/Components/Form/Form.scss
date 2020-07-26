@@ -1,8 +1,7 @@
 @import '../../Scss/Styles.scss';
 
 .formContainer {
-    width: 25%;
-    height: 25%;
+    width: 35%;
     display: flex;
     padding: 1rem;
     z-index: 1000;
@@ -13,15 +12,23 @@
     background-color: white;
     border: solid 1px $button-color;
 
-    .formContent {
+    .modalButton-container {
         width: 100%;
+        text-align: end;
+
+        .modalButton-close {
+            border: none;
+            color: white;
+            border-radius: 100%;
+            background-color: $button-color;
+        }
     }
 
-    .formButton-close {
-        top: 34%;
-        right: 35%;
-        border: none;
-        position: absolute;
-        background-color: transparent;
+    .formContent {
+        width: 100%;
+
+        p, input {
+            width: 95%;
+        }
     }
 }
