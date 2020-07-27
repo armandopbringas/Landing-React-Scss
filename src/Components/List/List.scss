@@ -1,0 +1,14 @@
+@import '../../Scss/Styles.scss';
+
+.listContainer {
+    display: flex;
+    height: 45rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.5rem;
+
+    .listTitle {
+        font-size: 1.5rem;
+    }
+}
