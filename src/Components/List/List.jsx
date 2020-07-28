@@ -3,7 +3,9 @@ import './List.scss';
 
 const List = () => {
     return (
-        <div className='listContainer'>
+        <div
+            id='list' 
+            className='listContainer'>
             <h1 className='listTitle'>List</h1>
             <ul>
                 <li>Pui</li>

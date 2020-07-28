@@ -1,5 +1,5 @@
 import React from 'react';
-import './Form.scss';
+import './Modal.scss';
 
 const Form = ({ showModal }) => {
 
@@ -17,7 +17,7 @@ const Form = ({ showModal }) => {
           </button>
         </div>
         <form 
-          action=""
+          action=''
           className='formContent'
         >
           <p>Name</p>

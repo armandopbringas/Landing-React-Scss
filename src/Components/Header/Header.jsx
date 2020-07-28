@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import logo from '../../Img/logo.png'
 import Button from '../Button/Button';
-import Modal from '../Form/Form';
+import Modal from '../Modal/Modal';
 import './Header.scss';
 
 const Header = () => {
