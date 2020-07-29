@@ -1,13 +1,18 @@
 import React from 'react';
-import Header from '../Components/Header/Header';
+import Layot from '../Components/Layout/Layout';
 import Banner from '../Components/Banner/Banner';
 import List from '../Components/List/List';
+import datContent from '../Content/Content';
 
 const App = () => (
   <>
-    <Header />
-    <Banner />
-    <List />
+    <Layot>
+      <Banner />
+      <List 
+        title='List Items'
+        items={datContent.items}
+      />
+    </Layot>
   </>
 );
 

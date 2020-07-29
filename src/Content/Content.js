@@ -1,32 +1,32 @@
 module.exports = {
-    skills: [
+    items: [
       {
-        technologie: 'HTML 5',
-        level: 'Fifty'
+        name: 'HTML 5',
+        level: '50%'
       },
       {
-        technologie: 'CSS 3',
-        level: 'Fifty'
+        name: 'CSS 3',
+        level: '50%'
       },
       {
-        technologie: 'JavaScript',
-        level: 'Forty'
+        name: 'JavaScript',
+        level: '40%'
       },
       {
-        technologie: 'Sass',
-        level: 'Thirty'
+        name: 'Sass',
+        level: '30%'
       },
       {
-        technologie: 'React JS',
-        level: 'Thirty five'
+        name: 'React JS',
+        level: '35%'
       },
       {
-        technologie: 'Node JS',
-        level: 'Twenty five'
+        name: 'Node JS',
+        level: '25%'
       },
       {
-        technologie: 'Git',
-        level: 'Forty'
+        name: 'Git',
+        level: '35%'
       }
     ]
   }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-scroll';
 import phone from '../../Img/phone.png';
+import SliceButton from '../SliceButton/SliceButton';
 import './Banner.scss';
 
 const Banner = () => {
@@ -23,19 +23,8 @@ const Banner = () => {
                         className='maskImage'
                     />
                 </div>
-                <button
-                    className='buttonSlice'
-                >
-                    <Link
-                        to='list'
-                        smooth={true}
-                        duration={1000}
-                        className='buttonLink'
-                    >
-                        Go Down
-                    </Link>
-                </button>
             </div>
+            <SliceButton />
         </>
     );
 };

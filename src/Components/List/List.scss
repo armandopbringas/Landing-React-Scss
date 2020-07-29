@@ -1,14 +1,36 @@
 @import '../../Scss/Styles.scss';
 
-.listContainer {
-    display: flex;
-    height: 45rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.list {
+    height: 25rem;
     line-height: 2.5rem;
+    padding: 4rem 2rem;
 
     .listTitle {
         font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .textContent {
+        width: 50%;
+    }
+
+    .listContainer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .listContent {
+        display: flex;
+        justify-content: center;
+
+        .listSkills {
+            text-align: right;
+            margin-right: 0.5rem;
+        }
+
+        .listLevel {
+            text-align: left;
+            margin-left: 0.5rem;
+        }
     }
 }

@@ -38,21 +38,6 @@
         }
     }
 
-    .buttonSlice {
-        top: 90%;
-        right: 45%;
-        height: 10%;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        border-radius: 100%;
-
-        .buttonLink {
-            text-decoration: none;
-        }
-    }
-    
-
 }
 
 @media screen and (max-width: 768px) {
