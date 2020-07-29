@@ -1,19 +1,24 @@
 @import '../../Scss/Styles.scss';
 
-.buttonSlice {
-    top: 90%;
-    left: 50%;
-    right: 50%;
-    width: 5rem;
-    height: 5rem;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    border-radius: 100%;
-    background-color: $button-color;
+.sliceContainer {
+    bottom: 5rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
 
-    .buttonLink {
-        color: white;
-        text-decoration: none;
+    .buttonSlice {
+        width: 5rem;
+        height: 5rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 100%;
+        background-color: $button-color;
+    
+        .buttonLink {
+            color: white;
+            text-decoration: none;
+        }
     }
+
 }
+

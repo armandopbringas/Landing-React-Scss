@@ -1,7 +1,8 @@
 import React from 'react';
+import Modal from '../Modal/Modal';
 import './Menu.scss';
 
-const Menu = ({ open }) => {
+const Menu = ({ open, showModal }) => {
 
     return (
         <nav 

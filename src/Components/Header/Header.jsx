@@ -1,16 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import logo from '../../Img/logo.png'
 import Button from '../Button/Button';
-import Modal from '../Modal/Modal';
 import './Header.scss';
 
 const Header = () => {
-
-    const [open, setOpen] =useState(false);
-
-    const showModal = () => {
-        setOpen(!open)
-    }
 
     // same but for keypresses
     // if the esc key is pressed close the menu toggle
@@ -62,19 +55,7 @@ const Header = () => {
                         </a>
                     </li>
                 </ul>
-                <button
-                    type='button'
-                    onClick={showModal}
-                    className='headerNav-button'
-                >
-                    Early acces
-                </button>
             </nav>
-            <div 
-                className={`modalContainer modalShowing-${open}`}
-            >
-                <Modal showModal={showModal}/>
-            </div>
             <Button />
         </header>
     );

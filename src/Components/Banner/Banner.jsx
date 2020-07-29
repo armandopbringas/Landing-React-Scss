@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import phone from '../../Img/phone.png';
+import Modal from '../Modal/Modal';
 import SliceButton from '../SliceButton/SliceButton';
 import './Banner.scss';
 
 const Banner = () => {
+
+    const [open, setOpen] =useState(false);
+
+    const showModal = () => {
+        setOpen(!open)
+    }
+
     return (
         <>
             <div className='mask'>
@@ -15,6 +23,13 @@ const Banner = () => {
                         We're building next generation personal finance tools.
                     </h2>
                     <p>Sign up to get early access.</p>
+                    <button
+                        type='button'
+                        onClick={showModal}
+                        className='headerNav-button'
+                    >
+                        Early acces
+                    </button>
                 </div>
                 <div className='maskImage-container'>
                     <img 
@@ -23,6 +38,11 @@ const Banner = () => {
                         className='maskImage'
                     />
                 </div>
+            </div>
+            <div 
+                className={`modalContainer modalShowing-${open}`}
+            >
+                <Modal showModal={showModal}/>
             </div>
             <SliceButton />
         </>

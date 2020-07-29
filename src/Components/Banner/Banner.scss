@@ -1,10 +1,8 @@
 @import '../../Scss/Styles.scss';
 
 .mask {
-    height: 45rem;
-    z-index: 999;
     display: flex;
-    padding: 0 2.5rem;
+    padding: 6.8rem 2.5rem;
     box-shadow: 0 14px 44px 0 rgba(0, 0, 0, 0.09);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
     background: linear-gradient(to bottom, #ffffff, #B3B3B3) center / cover;
@@ -34,10 +32,42 @@
         justify-content: center;
 
         .maskImage {
-            max-width: 100%;
+            max-width: 80%;
         }
     }
 
+}
+
+.modalContainer {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    pointer-events: none;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.25s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalShowing-true {
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.headerNav-button {
+    border: none;
+    color: white;
+    border-radius: 3.5px;
+    padding: 0.5rem 2rem;
+    background: $button-color;
 }
 
 @media screen and (max-width: 768px) {

@@ -6,31 +6,64 @@
     padding: 4rem 2rem;
 
     .listTitle {
+        margin-bottom: 1.5rem;
         font-size: 1.5rem;
         text-align: center;
     }
 
-    .textContent {
-        width: 50%;
-    }
-
     .listContainer {
         display: flex;
-        justify-content: center;
-    }
 
-    .listContent {
-        display: flex;
-        justify-content: center;
-
-        .listSkills {
-            text-align: right;
-            margin-right: 0.5rem;
+        .textContent {
+            margin: auto;
         }
 
-        .listLevel {
-            text-align: left;
-            margin-left: 0.5rem;
+        .textContent, 
+        .listContent {
+            width: 50%;
+        }
+
+        .listContent {
+            display: flex;
+            opacity: 0.65;
+            padding: 1.5rem 0;
+            justify-content: center;
+            background-color: lightgray;
+
+            .listSkills {
+                text-align: right;
+                margin-right: 0.5rem;
+            }
+
+            .listLevel {
+                text-align: left;
+                margin-left: 0.5rem;
+            }
         }
     }
+
+
+    // .textContent {
+    //     width: 50%;
+    // }
+
+    // .listContainer {
+    //     display: flex;
+    //     justify-content: center;
+    // }
+
+    // .listContent {
+    //     display: flex;
+    //     justify-content: center;
+
+    //     .listSkills {
+    //         text-align: right;
+    //         margin-right: 0.5rem;
+    //     }
+
+    //     .listLevel {
+    //         text-align: left;
+    //         margin-left: 0.5rem;
+    //     }
+    // }
 }

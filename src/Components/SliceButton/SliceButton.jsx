@@ -4,7 +4,7 @@ import './SliceButton.scss';
 
 const SliceButton = () => {
     return (
-        <div>
+        <div className='sliceContainer container'>
             <button
                     className='buttonSlice'
                 >

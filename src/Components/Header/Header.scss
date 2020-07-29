@@ -36,30 +36,6 @@
         }
 
     }
-
-    .modalContainer {
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        width: 100vw;
-        height: 100vh;
-        z-index: 1000;
-        display: flex;
-        position: fixed;
-        align-items: center;
-        pointer-events: none;
-        flex-direction: column;
-        justify-content: center;
-        transition: opacity 0.25s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.3);
-    }
-    
-    .modalShowing-true {
-        opacity: 1;
-        pointer-events: visible;
-    }
 }
 
 @media screen and (max-width: 768px) {
