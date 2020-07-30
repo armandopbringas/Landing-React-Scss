@@ -6,7 +6,7 @@
     padding: 1rem;
     z-index: 1000;
     border-radius: 5px;
-    line-height: 1.5rem;
+    line-height: 1.7rem;
     flex-direction: column;
     align-items: flex-start;
     background-color: white;
@@ -14,8 +14,9 @@
 
     .modalButton-container {
         width: 100%;
-        text-align: end;
-
+        display: flex;
+        justify-content: space-between;
+        
         .modalButton-close {
             border: none;
             color: white;
@@ -29,6 +30,26 @@
 
         p, input {
             width: 95%;
+        }
+
+        .submitButton {
+            width: 25%;
+            border: none;
+            color: white;
+            padding: 0.25rem;
+            margin-top: 1rem;
+            border-radius: 2.5px;
+            background-color: $button-color;
+        }
+
+        .textAlert {
+            color: red;
+            margin-left: 0.5rem;
+        }
+
+        .textThanks {
+            color: green;
+            margin-left: 0.5rem;
         }
     }
 }
