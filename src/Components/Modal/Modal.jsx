@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Modal.scss';
 
-const Form = ({ showModal }) => {
+const Form = ({ showhideModal }) => {
 
   // State para validar el envío de datos
   const [ send, setSend ] = useState({
@@ -10,13 +10,13 @@ const Form = ({ showModal }) => {
   }); 
 
   // State para mostrat error en caso de informacíon no válida o incompleta.
-  const [error, setError] = useState(false);
+  const [ error, setError ] = useState(false);
 
   // Destructuración de valores (values).
   const { name, email } = send;
 
   // Función que genera el evento de envío de datos 
-  const handleInputChange =  e => {
+  const handleInputChange = e => {
     setSend({
       ...send,
       [e.target.name] : e.target.value
@@ -36,6 +36,10 @@ const Form = ({ showModal }) => {
       name: '',
       email: ''
     });
+    // Cerrar el modal despues del submit.
+    setTimeout(() => {
+      showhideModal()
+    }, 1000)
   }
 
   return (
@@ -46,7 +50,7 @@ const Form = ({ showModal }) => {
           <h1>Sign up</h1>
           <button
             type='button'
-            onClick={showModal}
+            onClick={showhideModal}
             className='modalButton-close'
           >
             x

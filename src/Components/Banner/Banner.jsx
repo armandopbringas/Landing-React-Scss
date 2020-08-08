@@ -8,7 +8,7 @@ const Banner = () => {
 
     const [open, setOpen] =useState(false);
 
-    const showModal = () => {
+    const showhideModal = () => {
         setOpen(!open)
     }
 
@@ -25,7 +25,7 @@ const Banner = () => {
                     <p>Sign up to get early access.</p>
                     <button
                         type='button'
-                        onClick={showModal}
+                        onClick={showhideModal}
                         className='headerNav-button'
                     >
                         Early acces
@@ -39,10 +39,12 @@ const Banner = () => {
                     />
                 </div>
             </div>
-            <div 
+            <div
                 className={`modalContainer modalShowing-${open}`}
             >
-                <Modal showModal={showModal}/>
+                <Modal 
+                    showhideModal={showhideModal}
+                />
             </div>
             <SliceButton />
         </>
